@@ -1,8 +1,9 @@
 import './App.css';
-import TDcontent from './component/TDcontent';
-import Navbar from './component/Navbar';
-import SelectDropBox from './component/SelectDropBox';
-import SortDropBox from './component/SortDropBox';
+import {BrowserRouter as Router, Routes} from 'react-router-dom'
+import TDcontent from './TDcontent';
+import Navbar from './Navbar';
+import SelectDropBox from './SelectDropBox';
+import SortDropBox from './SortDropBox';
 
 function App() {
   return (
