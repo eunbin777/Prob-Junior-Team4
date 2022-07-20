@@ -1,0 +1,118 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+body{
+  font-family: sans-serif;
+  background-color: rgba(205, 205, 255, 0.5);
+}
+
+
+.navy-bar{
+  background : #000080;
+  display: flex;
+  padding: 15px;
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+
+
+.mapping{
+  color: #000080;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+
+.searching
+{
+    text-align:center;
+    width: 900px;
+    font-size: 1rem;
+    height: 80px;
+    border: 3px white;
+    border-radius: 40px;
+    background-color: white;
+    position: absolute;
+    padding-top: 10px;
+    padding-bottom: 70px;
+
+    color: #000080;
+    font-size: large;
+    font-weight: bolder;
+    left: 30%;
+    top: 89%;
+    margin: -75px 0 0 -75px; /*상 우 하 좌 순서*/
+    transition: 0.9s; /*0.9초의 속성을 주겠다 !*/
+}
+
+.city{
+  left: 5cm;
+  bottom: 0.5cm;
+  font-size: 1rem;
+  text-align:center;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  position: absolute;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 6.5cm;
+  padding-right: 6.5cm;
+}
+
+.district{
+  left: 14cm;
+  bottom: 0.5cm;
+  font-size: 1rem;
+  text-align:center;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  position: absolute;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 3.5cm;
+  padding-right: 3.5cm;
+}
+
+.check{
+  position: absolute;
+  text-align: center;
+  right: 20cm;
+  bottom: 1.1cm;
+}
+
+svg{
+  height: 600px;
+  width: 900px;
+  fill:white;
+}
+path:hover{
+  fill:#000080;
+  transition: all 0.6s ease-in-out;
+  z-index: 10;
+}
+
+.comfirm{
+  background-color: #000080;
+  left: 20cm;
+  bottom: 1cm;
+  font-size: 1rem;
+  text-align: center;
+  position: absolute;
+  cursor: pointer;
+  border-radius: 6px;
+  color:white;
+  padding-left: 0.3cm;
+  padding-right: 0.3cm;
+  padding-top: 0.1cm;
+  padding-bottom: 0.1cm;
+
+}
