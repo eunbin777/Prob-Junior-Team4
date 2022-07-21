@@ -5,15 +5,17 @@ import TDdetail from "../routes/TDdetail";
 import MainPage from "../routes/MainPage";
 import MapPage from "../routes/MapPage";
 import LoginPage from "../routes/LoginPage";
+import SignUpPage from "../routes/SignUpPage";
 
 function AppRouter() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<MainPage />}></Route>
+        <Route path="/" exact element={<MainPage />}></Route>
         <Route path="/LoginPage" element={<LoginPage/>}></Route>
+        <Route path="/SignUpPage" element={<SignUpPage/>}></Route>
         <Route path="/MapPage" element={<MapPage />}></Route>
-        <Route path="/TDhome" exact={true} element={<TDhome />}></Route>
+        <Route path="/TDhome" element={<TDhome />}></Route>
         <Route path="/TDdetail" element={<TDdetail />}></Route>
       </Routes>
     </Router>

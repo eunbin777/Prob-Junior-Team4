@@ -2,12 +2,16 @@ import React, {useState} from "react";
 import googleIcon from "../assets/free-icon-search-281764.png";
 import facebookIcon from "../assets/facebook.png";
 import githubIcon from "../assets/github.png";
+import { auth } from "../fbase";
+import { signInWithEmailAndPassword } from "firebase/auth";
 
 const LoginPage = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [newAccount, setNewAccount] = useState(false);
     const [error, setError] = useState("");
+
+    const regpwd = /^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*\W).{8,15}$/;
 
     const onChange = (event) => {
       const {target: {name, value}} = event;
@@ -20,9 +24,19 @@ const LoginPage = () => {
   
     const onSubmit = async (event) => {
       event.preventDefault();
+      if(regpwd.test(password) === true){
+        try{
+          let data;
+          data = await signInWithEmailAndPassword(auth, email, password);
+          console.log(data);
+        } catch(error){
+          console.log(error);
+        }
+      }else {
+        alert("비밀번호 요구사항을 확인해주세요!");
+      }
     }
-  
-    const toggleAccount = () => setNewAccount((prev) => !prev);
+
     const onSocialClick = (event) => {
       console.log(event.target);
     }
