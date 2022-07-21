@@ -1,0 +1,54 @@
+.TDdetail{
+  background-color: rgba(210, 218, 242, 0.5);
+  padding-top: 100px;
+}
+
+.titleBox{
+  border-bottom: 1px solid #babcc7;
+}
+
+.title{
+  display: flex;
+  align-items: center;
+}
+
+.title > h4{
+  background-color: blue;
+  border-radius: 20px;
+  padding: 3px 10px;
+  margin-right: 7px;
+}
+
+.titleBox > h5{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.content{
+  margin-top: 30px;
+}
+
+.content > .imgBox{
+  width: 100%;
+  padding-bottom: 35%;
+  background-color: pink;
+}
+
+.content > .leftSec,
+.content > .rightSec{
+  margin-top: 30px;
+  height: 500px;
+}
+
+.content > div{
+  display: flex;
+}
+
+.content > .leftSec{
+  width: 65%;
+  background-color: purple;
+}
+.content > .rightSec{
+  width: 35%;
+  background-color: mediumaquamarine;
+}

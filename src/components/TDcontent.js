@@ -1,4 +1,4 @@
-import styles from "./TDcontent.module.css";
+import styles from "../styles/TDcontent.module.css";
 import {Link} from "react-router-dom";
 import TDdetail from "../routes/TDdetail";
 

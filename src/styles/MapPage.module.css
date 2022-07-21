@@ -1,0 +1,102 @@
+.App{
+  text-align: center;
+}
+
+body{
+  font-family: sans-serif;
+}
+
+.MapBG100{
+  width: 100%;
+  height: 100vh;
+  background-color: #C9CEE9;
+}
+
+.mapping{
+  color: #000080;
+  font-size: 25px;
+  font-weight: bolder;
+  padding-top: 100px;
+}
+
+
+.searching
+{
+    text-align: center;
+    width: 500px;
+    font-size: 10px;
+    height: 80px;
+    border: 3px white;
+    border-radius: 15px;
+    background-color: white;
+    position: absolute;
+    color: #000080;
+    font-weight: bolder;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    transition: 0.9s; /*0.9초의 속성을 주겠다 !*/
+    display: flex;
+    align-items: center;
+}
+
+.searching > .check{
+  margin-left: 50px;
+  margin-right: 40px;
+}
+
+.searching >.city{
+  display: inline-block;
+  font-size: 1rem;
+  text-align:center;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  padding: 3px 80px;
+  margin-right: 5px;
+}
+
+.district{
+  left: 14cm;
+  bottom: 0.5cm;
+  font-size: 1rem;
+  text-align:center;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  position: absolute;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 3.5cm;
+  padding-right: 3.5cm;
+}
+
+.MapImage{
+  height: 500px;
+  width: 900px;
+  fill:white;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+path:hover{
+  fill:#000080;
+  transition: all 0.6s ease-in-out;
+  z-index: 10;
+}
+
+.comfirm{
+  background-color: #000080;
+  left: 20cm;
+  bottom: 1cm;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 6px;
+  color:white;
+  padding-left: 0.3cm;
+  padding-right: 0.3cm;
+  padding-top: 0.1cm;
+  padding-bottom: 0.1cm;
+
+}

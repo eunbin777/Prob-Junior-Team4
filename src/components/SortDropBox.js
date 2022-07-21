@@ -1,4 +1,4 @@
-import styles from "./SortDropBox.module.css"
+import styles from "../styles/SortDropBox.module.css"
 
 const localOptions = [
 	{ value: "recommend", name: "추천 순" },

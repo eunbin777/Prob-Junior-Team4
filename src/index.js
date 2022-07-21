@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
-import './index.css';
+import './styles/index.css';
 import firebase from "./firebase";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

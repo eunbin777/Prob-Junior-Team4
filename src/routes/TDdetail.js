@@ -1,7 +1,7 @@
 import React from 'react';
-import './App.css';
+import '../styles/App.css';
 import Navbar from '../components/Navbar';
-import styles from './TDdetail.module.css';
+import styles from '../styles/TDdetail.module.css';
 
 function TDdetail() {
   return (
