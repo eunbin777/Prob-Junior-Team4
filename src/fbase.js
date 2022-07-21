@@ -1,5 +1,6 @@
 import { initializeApp } from 'firebase/app';
 import { getAuth } from "firebase/auth";
+import { FacebookAuthProvider } from "firebase/auth";
 import { getFirestore } from "firebase/firestore"
 
 const firebaseConfig = {
@@ -13,5 +14,8 @@ const firebaseConfig = {
     measurementId: process.env.REACT_APP_MEASUR_ID
   };
 
-export default initializeApp(firebaseConfig);
+initializeApp(firebaseConfig)
+const provider = new FacebookAuthProvider();
+
+export const auth = getAuth();
 //const analytics = getAnalytics(app);

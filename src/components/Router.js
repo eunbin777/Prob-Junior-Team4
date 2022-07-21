@@ -4,12 +4,14 @@ import TDhome from "../routes/TDhome";
 import TDdetail from "../routes/TDdetail";
 import MainPage from "../routes/MainPage";
 import MapPage from "../routes/MapPage";
+import LoginPage from "../routes/LoginPage";
 
 function AppRouter() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<MainPage />}></Route>
+        <Route path="/LoginPage" element={<LoginPage/>}></Route>
         <Route path="/MapPage" element={<MapPage />}></Route>
         <Route path="/TDhome" exact={true} element={<TDhome />}></Route>
         <Route path="/TDdetail" element={<TDdetail />}></Route>
