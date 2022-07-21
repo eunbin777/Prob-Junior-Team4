@@ -2,11 +2,14 @@ import React, {useState} from "react";
 import {auth} from "../fbase"
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import Navbar from "../components/Navbar";
+import { useNavigate } from "react-router-dom";
 
 const SignUpPage = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState("");
+
+    const navigate = useNavigate();
 
     const regpwd = /^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*\W).{8,15}$/;
 
@@ -25,6 +28,7 @@ const SignUpPage = () => {
             try{
                 let data;
                 data = await createUserWithEmailAndPassword(auth, email, password);
+                navigate('/');
             } catch (error){
                 setError(error.message);
                 alert(error);
