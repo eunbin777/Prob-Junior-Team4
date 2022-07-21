@@ -15,7 +15,6 @@ const firebaseConfig = {
   };
 
 initializeApp(firebaseConfig)
-const provider = new FacebookAuthProvider();
 
 export const auth = getAuth();
 //const analytics = getAnalytics(app);

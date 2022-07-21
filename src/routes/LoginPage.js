@@ -3,7 +3,7 @@ import googleIcon from "../assets/free-icon-search-281764.png";
 import facebookIcon from "../assets/facebook.png";
 import githubIcon from "../assets/github.png";
 import { auth } from "../fbase";
-import { signInWithEmailAndPassword } from "firebase/auth";
+import { GoogleAuthProvider, GithubAuthProvider, FacebookAuthProvider,signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 
 const LoginPage = () => {
@@ -34,9 +34,26 @@ const LoginPage = () => {
       }
     }
 
-    const onSocialClick = (event) => {
-      console.log(event.target);
-    }
+    const onSocialClick = async (event) => {
+      const {
+        target: {name},
+      } = event;
+      let provider;
+      try{
+        if(name === "google"){
+          provider = new GoogleAuthProvider();
+        }else if(name === "facebook"){
+          provider = new FacebookAuthProvider();
+        }else if(name === "github"){
+          provider = new GithubAuthProvider();
+        }
+        await signInWithPopup(auth, provider);
+        navigate("/");
+      }catch(error){
+        setError(error.message);
+        alert(error);
+      }
+    };
   
     return (
       <div>
