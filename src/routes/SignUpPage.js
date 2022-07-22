@@ -42,6 +42,7 @@ const SignUpPage = () => {
         <form onSubmit={onSubmit}>
           <input name="email" type="email" placeholder="Email" required value={email} onChange={onChange}/>
           <input name="password" type="password" placeholder="Password" required value={password} onChange={onChange}/>
+          <p>비밀번호는 특수 문자, 영어, 숫자를 포함하여 8 ~ 15 글자로 설정해주세요</p>
           <input type="submit" value="Sign Up" />
         </form>
       </div>
