@@ -3,6 +3,8 @@
 import styles from '../styles/MapPage.module.css';
 import React, {useState} from 'react';
 import Navbar from '../components/Navbar';
+import {Link} from "react-router-dom";
+import TDhome from './TDhome';
 
 function MapPage() {
   
@@ -12,7 +14,6 @@ function MapPage() {
   let text2 = "여행지 검색";
   let text3 = "지역 선택";
   const [tmp, setTmp] = useState("시/도");
-
 
   return (
     <div className={styles.App}>
@@ -140,7 +141,9 @@ function MapPage() {
           <div className={styles.searching}>
                 <h1 className={styles.check}>{text3}</h1>
                 <h3 className={styles.city}>{tmp}</h3>
-                <button className={styles.comfirm} onClick={()=> document.location.href('/')}>확인</button>
+                <Link to="/TDhome" element={<TDhome />}>
+                  <button className={styles.comfirm}>확인</button>
+                </Link>
           </div>
         </div>
       </div>
