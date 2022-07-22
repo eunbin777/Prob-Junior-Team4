@@ -1,7 +1,7 @@
 .TDheader{
   width: 100%;
-  height: 350px;
-  background-color: rgba(210, 218, 242, 0.5);
+  height: 300px;
+  background-color: #E8FFB7;
   padding-top: 100px;
   position: relative;
   margin-bottom: 50px;
@@ -11,9 +11,32 @@
   margin: 0 auto;
 }
 .TDheader h1{
-  font-size: 60px;
+  font-size: 50px;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: #0D1B50;
+}
+.DiamondWrap{
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+}
+.DiamondSmall{
+  width: 20px;
+  height: 20px;
+}
+.DiamondMedium{
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) saturate(100%) invert(8%) sepia(88%) saturate(1920%) hue-rotate(216deg) brightness(101%) contrast(100%);
+}
+.DiamondLarge{
+  width: 70px;
+  height: 70px;
+  filter: brightness(0) saturate(100%) invert(8%) sepia(88%) saturate(1920%) hue-rotate(216deg) brightness(101%) contrast(100%);
 }

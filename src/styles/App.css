@@ -41,7 +41,7 @@ a {
 /* travelDestination01 시작 */
 .travelDestination01 .dropdown{
   margin-top: 300px;
-  text-align: start;
+  text-align: center;
 }
 .travelDestination01 .content-box{
   width: 100%;
@@ -50,19 +50,25 @@ a {
 }
 /* travelDestination01 끝 */
 .SelectBox{
-  margin-top: 100px;
-  width: 80%;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  width: 70%;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 .TagBox{
-  display: flex;
-  margin-top: 10px;
-  justify-content: space-between;
+  width: 400px;
 }
 .TagBox > li{
-  border: 1px solid rgba(13, 27, 80, 1);
+  border: 2px solid rgba(13, 27, 80, 0.9);
+  color: rgba(13, 27, 80, 0.9);
   border-radius: 20px;
+  font-weight: bold;
   padding: 2px 10px;
+  text-align: center;
+  margin-right: 5px;
+  margin-bottom: 5px;
 }
 
 

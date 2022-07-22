@@ -22,6 +22,16 @@
   align-items: center;
 }
 
+.LogoWrap{
+  display: flex;
+  align-items: center;
+}
+
+.LogoWrap > .travel{
+  font-size: 27px;
+  font-style: italic;
+}
+
 .navbar ul {
   text-align: center;
   display: flex;
@@ -55,7 +65,11 @@
   border-radius: 15px;
   background-color: rgb(104, 111, 134);
 }
-
+.navbar .inputSearch::placeholder {
+  color: rgba(13, 27, 80, 1);
+  font-weight: bold;
+  line-height: 3px;
+}
 .navbar .navSearch svg {
   position: absolute;
   right: 0%;

@@ -48,7 +48,7 @@
   -webkit-line-clamp: 3;
   
   /* ★★ line-height:20px일때 ★★ */
-  height: 65px; /* ★★ line-height * 3 +5px 정도 ★★ */
+  height: 63px; /* ★★ line-height * 3 +5px 정도 ★★ */
 }
 
 .TDcontentBox > .textBox h1{
