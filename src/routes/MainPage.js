@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 import Navbar from '../components/Navbar';
 import styles from '../styles/MainPage.module.css'
 import MapPage from './MapPage'
+import MainPage2 from './MainPage2';
 
 const MainPage = () => {
   return (
@@ -20,6 +21,7 @@ const MainPage = () => {
             </Link>
           </div>
         </div>
+        <MainPage2 />
       </>
   );
 }
