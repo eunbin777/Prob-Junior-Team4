@@ -1,0 +1,24 @@
+.container {
+  background-color:rgba(13, 27, 80, 1);
+  padding: 1rem 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.siteLogo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+}
+.LogoWrap{
+  display: flex;
+  align-items: center;
+}
+
+.LogoWrap .travel{
+  font-size: 27px;
+  font-style: italic;
+  color: #BBFD92;
+}
