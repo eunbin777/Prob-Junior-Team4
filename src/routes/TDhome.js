@@ -27,9 +27,6 @@ function TDhome() {
         <div className='conSmall'>
           {/* <SortDropBox/> */}
           <TDcontent />
-          <TDcontent />
-          <TDcontent />
-          <TDcontent />
         </div>
       </section>
     </div>

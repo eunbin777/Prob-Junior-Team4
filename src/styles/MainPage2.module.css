@@ -1,18 +1,48 @@
 
+.conSmall{
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.MainPage2{
+  margin-top: 250px;
+  margin-bottom: 150px;
+}
 .img{
   max-width: 100%;
   max-height: 100%;
 }
 .list{
-  margin-top: 10%;
   margin-left: 3%;
   margin-right: 3%;
-}
-.t{
-  margin-left: 10%;
-  margin-bottom: 1.5%;
 }
 .interval{
   margin-left: 1%;
   margin-right: 1%;
+}
+.title{
+  display: flex;
+  align-items: center;
+  color: #0b1d50;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.title img{
+  width: 7%;
+}
+.slider img{
+  width: 97%;
+  margin: 0 auto;
+}
+.slider div{
+  position: relative;
+}
+.slider div h3{
+  position: absolute;
+  bottom: -2%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255,255,255,0.7);
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 14px;
 }

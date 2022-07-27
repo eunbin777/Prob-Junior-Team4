@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
 import './styles/index.css';
-import firebase from "./firebase";
+import firebase from "./fbase";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

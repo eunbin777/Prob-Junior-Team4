@@ -1,0 +1,38 @@
+.conXS{
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  padding-top: 100px;
+}
+.Logo{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 47%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+}
+.Logo img{
+  width: 40%;
+}
+.Logo p{
+  font-style: italic;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #bbfd92;
+}
+form > input:nth-child(5){
+  background-color: #0b1d50;
+  border: none;
+  border-radius: 30px;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
+  color: white;
+  margin-top: 70px;
+  padding:0;
+}
+form p{
+  font-size: 13px;
+}

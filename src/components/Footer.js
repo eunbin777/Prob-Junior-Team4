@@ -14,7 +14,7 @@ const Footer = () => {
           <img src={Logo} width='45' height='27' />
           <div className={styles.travel}>Travel</div>
         </div>
-      <p> <b>Copyright &copy; <span>{thisYear()}</span></b></p>
+      <p className={styles.txt}> Copyright &copy; <span>{thisYear()}</span></p>
     </div>
   )
 }

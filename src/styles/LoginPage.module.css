@@ -1,0 +1,65 @@
+.conXS{
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+form{
+  padding-top: 200px;
+}
+form > input{
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box;
+  border: 3px solid #848BA6;
+  margin-top: 10px;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 5px;
+  padding-left: 10px;
+}
+form > input:nth-child(3){
+  background-color: #0b1d50;
+  border: none;
+  border-radius: 30px;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
+  color: white;
+  margin-top: 40px;
+  padding:0;
+}
+.ORWrap{
+  display: flex;
+  align-items: center;
+  max-width: 110%;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 30px;
+  color: #C9C9C9;
+}
+.ORline{
+  width: 200px;
+  height: 1.5px;
+  background-color: #C9C9C9;
+  display: block;
+  margin: 0 5px;
+}
+.OtherLoginWrap{
+  padding-top: 30px;
+}
+.OtherLoginWrap button{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  border: 2px solid #082282;
+  background-color: #fff;
+}
+
+.OtherLoginWrap button p{
+  margin-left: 5px;
+}

@@ -19,7 +19,7 @@ function MapPage() {
     <div className={styles.App}>
       <Navbar />
       <div className={styles.MapBG100}>
-        <div className={styles.MapBG60}>
+        
             {/* - - - - - - - 상단 바 구현 - - - - - - - */}
 
 
@@ -145,7 +145,7 @@ function MapPage() {
                   <button className={styles.comfirm}>확인</button>
                 </Link>
           </div>
-        </div>
+
       </div>
           {/* - - - - - - - 하단 바 구현 - - - - - - - */}
     </div>

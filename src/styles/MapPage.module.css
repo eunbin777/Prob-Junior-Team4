@@ -1,6 +1,3 @@
-.App{
-  text-align: center;
-}
 
 body{
   font-family: sans-serif;
@@ -10,6 +7,7 @@ body{
   width: 100%;
   height: 100vh;
   background-color: #C9CEE9;
+  text-align: center;
 }
 
 .mapping{

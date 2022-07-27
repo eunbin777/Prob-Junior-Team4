@@ -70,5 +70,10 @@ a {
   margin-right: 5px;
   margin-bottom: 5px;
 }
-
-
+/* slick-slider css */
+.slick-prev, .slick-next{
+  color: #0b1d50!important;
+  width: 30px!important;
+  height: 40px!important;
+  margin: 0 -15px;
+}

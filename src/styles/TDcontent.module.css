@@ -2,17 +2,38 @@
   width: 100%;
   border: 1px solid #babcc7;
   margin-bottom: 50px;
+  color: #0D1B50;
 }
 
-.TDcontentBox > .imgBox{
+.TDcontentBox > .imgBox01,
+.TDcontentBox > .imgBox02,
+.TDcontentBox > .imgBox03,
+.TDcontentBox > .imgBox04{
   width: 100%;
-  height: 450px;
-  background-color: #bdd;
-  position: relative;
+  height: 450px; 
+  position: relative; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-.TDcontentBox > .imgBox > h2{
-  background-color: blue;
+.TDcontentBox > .imgBox01{
+  background-image: url(../assets/광안리해수욕장.jpg);
+}
+.TDcontentBox > .imgBox02{
+  background-image: url(../assets/엑스포\ 과학공원.jpg);
+}
+.TDcontentBox > .imgBox03{
+  background-image: url(../assets/스파밸리.jpg);
+}
+.TDcontentBox > .imgBox04{
+  background-image: url(../assets/대저생태공원.jpg);
+}
+.imgBox01 > h2,
+.imgBox02 > h2,
+.imgBox03 > h2,
+.imgBox04 > h2{
+  background-color: white;
+  opacity: 0.8;
   border-radius: 20px;
   padding: 3px 12px;
   display: inline-block;
@@ -20,6 +41,16 @@
   bottom: 3.5%;
   left: 1.5%;
 }
+
+/* .TDcontentBox > .imgBox > h2{
+  background-color: blue;
+  border-radius: 20px;
+  padding: 3px 12px;
+  display: inline-block;
+  position: absolute;
+  bottom: 3.5%;
+  left: 1.5%;
+} */
 
 .TDcontentBox > .textBox{
   padding: 23px 20px;
@@ -51,9 +82,10 @@
   height: 63px; /* ★★ line-height * 3 +5px 정도 ★★ */
 }
 
-.TDcontentBox > .textBox h1{
+.TDcontentBox img{
   justify-content: flex-end;
   flex-grow: 2;
-  font-size: 30px;
-  color: red;
+  width: 8px;
+  height: 30px;
+  margin-right: 15px;
 }
