@@ -2,7 +2,8 @@ import React, {useState} from "react";
 import {auth} from "../fbase"
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
-import styles from "../styles/SignUpPage.module.css"
+import styles from "../styles/SignUpPage.module.css";
+import Navbar from "../components/Navbar";
 
 const SignUpPage = () => {
     const [email, setEmail] = useState('');
@@ -38,6 +39,8 @@ const SignUpPage = () => {
         }
       }
     return (
+      <>
+      <Navbar />
       <div className={styles.conXS}>
         <div className={styles.Logo}>
           <img src={require('../assets/Logo.png')}/>  
@@ -51,6 +54,7 @@ const SignUpPage = () => {
           <input type="submit" value="Sign Up" />
         </form>
       </div>
+      </>
     );
 
 };
